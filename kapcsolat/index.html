@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05070a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Kapcsolat és időpontfoglalás | Vergál Autószervíz</title><link rel="stylesheet" href="kapcsolat.css"></head>
+<body id="top"><div class="noise"></div>
+<header class="site-header" id="siteHeader">
+    <a class="brand" href="../../index.html" aria-label="Vergál Autószervíz főoldal">
+        <span class="brand-mark">V</span>
+        <span class="brand-text">VERGÁL<small>AUTÓSZERVÍZ</small></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="../../index.html">Főoldal</a>
+        <a href="../../szolgaltatasok/">Szolgáltatások</a>
+        <a href="../../arak/">Árak</a>
+        <a href="../../rolunk/">Rólunk</a>
+        <a href="../../kapcsolat/">Kapcsolat</a>
+    </nav>
+
+    <a class="header-phone" href="tel:+36307871637">
+        06 30 787 1637 <span>↗</span>
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="Menü megnyitása" aria-expanded="false">
+        <i></i><i></i><i></i>
+    </button>
+</header>
+
+<main>
+<section class="page-hero"><div class="page-inner reveal"><span class="page-number">05 / KAPCSOLAT</span><h1>BESZÉLJÜNK<br><em>AZ AUTÓDRÓL.</em></h1><p>Időpontot kérnél vagy előbb egyeztetnél? Telefonon a leggyorsabb, az űrlapon pedig elküldheted a fontosabb adatokat.</p></div></section>
+
+<section class="section">
+<div class="contact-grid">
+<div class="contact-card reveal"><span>TELEFON</span><a href="tel:+36307871637">06 30 787 1637</a><small>Gyors egyeztetéshez</small></div>
+<div class="contact-card reveal"><span>HELYSZÍN</span><strong>Katafa</strong><small>9915 · Magyarország</small></div>
+<div class="contact-card reveal"><span>ÜZENET</span><a href="#booking">IDŐPONTKÉRÉS ↓</a><small>Írd meg, miben segíthetünk</small></div>
+</div>
+</section>
+
+<section class="section booking" id="booking">
+<div class="booking-intro reveal">
+<span class="kicker">IDŐPONTFOGLALÁS</span>
+<h2 class="section-title">FOGLALJ<br><em>IDŐPONTOT.</em></h2>
+<p>Válaszd ki a szolgáltatást, add meg az adataidat és írd le röviden, mi a probléma.</p>
+<div class="booking-line"></div>
+<a href="tel:+36307871637">06 30 787 1637</a>
+</div>
+
+<form class="booking-form reveal">
+<div class="form-row">
+<label>Név<input type="text" name="name" required placeholder="Teljes név"></label>
+<label>Telefon<input type="tel" name="phone" required placeholder="+36 ..."></label>
+</div>
+<div class="form-row">
+<label>E-mail<input type="email" name="email" placeholder="email@pelda.hu"></label>
+<label>Autó<input type="text" name="car" placeholder="Pl. Audi A4 2.0 TDI"></label>
+</div>
+<div class="form-row">
+<label>Szolgáltatás
+<select name="service" required>
+<option value="">Válassz...</option>
+<option>Diagnosztika</option>
+<option>Fék & futómű</option>
+<option>Olajszerviz</option>
+<option>Klímaszerviz</option>
+<option>Gumiszerelés</option>
+<option>Műszaki felkészítés</option>
+<option>Egyéb javítás</option>
+</select>
+</label>
+<label>Dátum<input id="bookingDate" type="date" name="date" required></label>
+</div>
+<label>Időpont
+<div class="slots">
+<button type="button" class="slot" data-time="08:00">08:00</button>
+<button type="button" class="slot" data-time="09:00">09:00</button>
+<button type="button" class="slot" data-time="10:00">10:00</button>
+<button type="button" class="slot" data-time="11:00">11:00</button>
+<button type="button" class="slot" data-time="13:00">13:00</button>
+<button type="button" class="slot" data-time="14:00">14:00</button>
+<button type="button" class="slot" data-time="15:00">15:00</button>
+<button type="button" class="slot" data-time="16:00">16:00</button>
+</div>
+<input id="bookingTime" type="hidden" name="time">
+</label>
+<label>Megjegyzés<textarea name="message" placeholder="Mi a hiba, mit tapasztalsz?"></textarea></label>
+<button class="btn btn-main submit" type="submit">IDŐPONTKÉRÉS ELKÜLDÉSE →</button>
+<p class="form-status"></p>
+</form>
+</section>
+
+<section class="section">
+<div class="map-box reveal"><div class="map-content"><strong>KATAFA</strong><span>9915 · VERGÁL AUTÓSZERVÍZ</span></div></div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="footer-brand">
+        <span class="brand-mark">V</span>
+        <span class="brand-text">VERGÁL<small>AUTÓSZERVÍZ</small></span>
+    </div>
+    <p>© 2026 Vergál Autószervíz — Katafa</p>
+    <a href="#top">VISSZA A TETEJÉRE ↑</a>
+</footer>
+<script src="../app.js"></script></body></html>
